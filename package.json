@@ -1,0 +1,23 @@
+{
+    "name": "yama-theme",
+    "displayName": "YaMa Theme",
+    "publisher": "yama",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.110.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "YaMa",
+                "uiTheme": "vs",
+                "path": "./themes/YaMa-color-theme.json"
+            }
+        ]
+    },
+    "license": "MIT"
+}
