@@ -1,5 +1,5 @@
 {
-  "name": "YaMa Theme",
+  "name": "YaMa Light Theme",
   "colors": {
     "focusBorder": "#0284c7",
     "foreground": "#3b3b3b",
@@ -263,41 +263,23 @@
     // --- --- --- --- --- ---
 
     // --- JS, TS ---
-    // Серый цвет
+    // Черный цвет
     {
       "scope": [
-        "keyword.control",
-        "storage.type",
-        "storage.modifier",
-        "storage.type.function.arrow",
-        "punctuation.accessor",
-        "punctuation.definition.brace",
-        "punctuation.definition.bracket",
-        "punctuation.definition.paren",
-        "punctuation.definition.group",
-        "punctuation.definition.block",
-        "punctuation.definition.function",
-        "punctuation.definition.parameters",
-        "punctuation.definition.arguments",
-        "punctuation.separator.arrow",
-        "punctuation.separator.comma",
-        "punctuation.terminator.statement",
-        "meta.brace.round.ts",
-        "punctuation.separator.parameter.ts"
+        "meta.template.expression",
       ],
       "settings": {
-        "foreground": "#979797"
+        "foreground": "#0f172a",
       }
     },
     {
-      "name": "Comment",
       "scope": [
-        "comment",
-        "punctuation.definition.comment"
+        "variable.other.constant.object.property",
+        "variable.other.constant.property"
       ],
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#979797"
+        "foreground": "#0f172a",
+        "fontStyle": ""
       }
     },
     // Жирный текст
@@ -319,6 +301,49 @@
       ],
       "settings": {
         "fontStyle": "bold"
+      }
+    },
+    // Серый цвет
+    {
+      "scope": [
+        "keyword.control",
+        "storage.type",
+        "storage.modifier",
+        "storage.type.function.arrow",
+        "punctuation.accessor",
+        "punctuation.definition.brace",
+        "punctuation.definition.bracket",
+        "punctuation.definition.paren",
+        "punctuation.definition.group",
+        "punctuation.definition.block",
+        "punctuation.definition.function",
+        "punctuation.definition.parameters",
+        "punctuation.definition.arguments",
+        "punctuation.separator.arrow",
+        "punctuation.separator.comma",
+        "punctuation.terminator.statement",
+        "punctuation.separator.parameter",
+        "punctuation.definition.string.template.begin",
+        "punctuation.definition.string.template.end",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+        "punctuation.definition.string.begin",
+        "punctuation.definition.string.end",
+        "meta.brace.round",
+      ],
+      "settings": {
+        "foreground": "#979797"
+      }
+    },
+    {
+      "name": "Comment",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#979797"
       }
     },
     // Синий цвет
@@ -353,12 +378,14 @@
     {
       "name": "Number, Constant",
       "scope": [
+        "variable.other.constant.object",
         "constant.numeric",
         "constant.language",
         "support.constant"
       ],
       "settings": {
-        "foreground": "#b45309"
+        "foreground": "#b45309",
+        "fontStyle": "bold"
       }
     },
     {
@@ -378,7 +405,8 @@
         "storage.type.class.jsdoc"
       ],
       "settings": {
-        "foreground": "#b45309"
+        "foreground": "#b45309",
+        "fontStyle": "italic bold"
       }
     },
     // --- --- --- ---
@@ -392,6 +420,15 @@
       ],
       "settings": {
         "foreground": "#0f172a",
+      }
+    },
+    {
+      "scope": [
+        "support.constant.property-value.css"
+      ],
+      "settings": {
+        "foreground": "#0f172a",
+        "fontStyle": ""
       }
     },
     // Серый цвет
@@ -419,6 +456,16 @@
       ],
       "settings": {
         "foreground": "#059669"
+      }
+    },
+    // Оранжевый цвет 
+    {
+      "scope": [
+        "constant.numeric.css",
+      ],
+      "settings": {
+        "foreground": "#b45309",
+        "fontStyle": ""
       }
     },
     // --- --- --- ---
