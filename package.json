@@ -2,8 +2,8 @@
     "name": "yama-theme",
     "displayName": "YaMa Theme",
     "publisher": "yama",
-    "description": "",
-    "version": "0.0.1",
+    "description": "Theme for Vue",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.110.0"
     },
@@ -13,9 +13,14 @@
     "contributes": {
         "themes": [
             {
-                "label": "YaMa",
+                "label": "YaMa theme light",
                 "uiTheme": "vs",
                 "path": "./themes/YaMa-color-theme.json"
+            },
+            {
+                "label": "YaMa theme dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/YaMa-color-theme-dark.json"
             }
         ]
     },
