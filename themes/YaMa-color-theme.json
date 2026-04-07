@@ -262,7 +262,9 @@
     // --- --- --- --- --- ---
     // --- --- --- --- --- ---
 
+    // --- --- --- --- --- ---
     // --- JS, TS ---
+    // --- --- --- --- --- ---
     // Черный цвет
     {
       "scope": [
@@ -323,6 +325,7 @@
         "punctuation.separator.comma",
         "punctuation.terminator.statement",
         "punctuation.separator.parameter",
+        "punctuation.separator.key-value",
         "punctuation.definition.string.template.begin",
         "punctuation.definition.string.template.end",
         "punctuation.definition.template-expression.begin",
@@ -330,6 +333,7 @@
         "punctuation.definition.string.begin",
         "punctuation.definition.string.end",
         "meta.brace.round",
+        "meta.brace.square",
       ],
       "settings": {
         "foreground": "#979797"
@@ -351,7 +355,6 @@
       "name": "Function",
       "scope": [
         "entity.name.function",
-        "meta.function-call",
         "variable.function",
         "support.function",
         "keyword.operator.expression"
@@ -378,6 +381,7 @@
     {
       "name": "Number, Constant",
       "scope": [
+        "variable.language.this",
         "variable.other.constant.object",
         "constant.numeric",
         "constant.language",
@@ -411,7 +415,9 @@
     },
     // --- --- --- ---
 
+    // --- --- --- --- --- ---
     // --- CSS, SCSS ---
+    // --- --- --- --- --- ---
     // Черный цвет
     {
       "name": "Scss string",
@@ -470,7 +476,9 @@
     },
     // --- --- --- ---
 
+    // --- --- --- --- --- ---
     // --- HTML ---
+    // --- --- --- --- --- ---
     // Серый цвет
     {
       "name": "Text",
@@ -660,178 +668,6 @@
     },
 
     // --- --- --- --- --- ---
-    // --- Python ---
-    // --- --- --- --- --- ---
-    {
-      "name": "Python Function",
-      "scope": [
-        "meta.function.python",
-        "entity.name.function.python",
-        "support.function.python"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "Python Decorator",
-      "scope": [
-        "meta.function.decorator.python"
-      ],
-      "settings": {
-        "foreground": "#979797",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "Python Class",
-      "scope": [
-        "entity.name.type.class.python"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-    {
-      "name": "Python Keyword",
-      "scope": [
-        "keyword.control.python",
-        "keyword.operator.logical.python"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Python Self",
-      "scope": [
-        "variable.parameter.function.language.python"
-      ],
-      "settings": {
-        "foreground": "#979797",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "Python String",
-      "scope": [
-        "string.quoted.single.python",
-        "string.quoted.double.python",
-        "string.quoted.triple.python"
-      ],
-      "settings": {
-        "foreground": "#059669"
-      }
-    },
-    {
-      "name": "Python Number",
-      "scope": [
-        "constant.numeric.python"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-
-    // --- --- --- --- --- ---
-    // --- Java ---
-    // --- --- --- --- --- ---
-    {
-      "name": "Java Annotation",
-      "scope": [
-        "meta.annotation.java",
-        "storage.type.annotation.java"
-      ],
-      "settings": {
-        "foreground": "#979797",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "Java Modifier",
-      "scope": [
-        "storage.modifier.java"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Java Class",
-      "scope": [
-        "entity.name.type.class.java"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-    {
-      "name": "Java Method",
-      "scope": [
-        "entity.name.function.java"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "Java This",
-      "scope": [
-        "variable.language.this.java"
-      ],
-      "settings": {
-        "foreground": "#979797",
-        "fontStyle": "italic"
-      }
-    },
-
-    // --- --- --- --- --- ---
-    // --- Go ---
-    // --- --- --- --- --- ---
-    {
-      "name": "Go Package",
-      "scope": [
-        "keyword.control.import.go",
-        "keyword.control.package.go"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Go Function",
-      "scope": [
-        "entity.name.function.go"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "Go Type",
-      "scope": [
-        "support.type.go",
-        "storage.type.go"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-    {
-      "name": "Go Keyword",
-      "scope": [
-        "keyword.control.go"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-
-    // --- --- --- --- --- ---
     // --- Markdown ---
     // --- --- --- --- --- ---
     {
@@ -1002,48 +838,6 @@
     },
 
     // --- --- --- --- --- ---
-    // --- SQL ---
-    // --- --- --- --- --- ---
-    {
-      "name": "SQL Keyword",
-      "scope": [
-        "keyword.other.DDL.sql",
-        "keyword.other.DML.sql"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "SQL Function",
-      "scope": [
-        "support.function.sql"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "SQL String",
-      "scope": [
-        "string.quoted.single.sql"
-      ],
-      "settings": {
-        "foreground": "#059669"
-      }
-    },
-    {
-      "name": "SQL Number",
-      "scope": [
-        "constant.numeric.sql"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-
-    // --- --- --- --- --- ---
     // --- Shell Script (Bash) ---
     // --- --- --- --- --- ---
     {
@@ -1126,136 +920,5 @@
         "foreground": "#979797"
       }
     },
-
-    // --- --- --- --- --- ---
-    // --- C / C++ ---
-    // --- --- --- --- --- ---
-    {
-      "name": "C Preprocessor",
-      "scope": [
-        "meta.preprocessor.c",
-        "keyword.control.import.c"
-      ],
-      "settings": {
-        "foreground": "#979797",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "C Type",
-      "scope": [
-        "storage.type.c",
-        "storage.type.cpp"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-    {
-      "name": "C Function",
-      "scope": [
-        "entity.name.function.c",
-        "entity.name.function.cpp"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "C Keyword",
-      "scope": [
-        "keyword.control.c",
-        "keyword.control.cpp"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-
-    // --- --- --- --- --- ---
-    // --- Rust ---
-    // --- --- --- --- --- ---
-    {
-      "name": "Rust Keyword",
-      "scope": [
-        "keyword.control.rust"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Rust Function",
-      "scope": [
-        "entity.name.function.rust"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "Rust Type",
-      "scope": [
-        "storage.type.rust",
-        "support.type.rust"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    },
-    {
-      "name": "Rust Macro",
-      "scope": [
-        "entity.name.function.macro.rust"
-      ],
-      "settings": {
-        "foreground": "#979797",
-        "fontStyle": "italic"
-      }
-    },
-
-    // --- --- --- --- --- ---
-    // --- PHP ---
-    // --- --- --- --- --- ---
-    {
-      "name": "PHP Variable",
-      "scope": [
-        "variable.other.php"
-      ],
-      "settings": {
-        "foreground": "#b45309",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "PHP Function",
-      "scope": [
-        "entity.name.function.php"
-      ],
-      "settings": {
-        "foreground": "#0369a1"
-      }
-    },
-    {
-      "name": "PHP Keyword",
-      "scope": [
-        "keyword.control.php"
-      ],
-      "settings": {
-        "foreground": "#0f172a",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "PHP Class",
-      "scope": [
-        "entity.name.type.class.php"
-      ],
-      "settings": {
-        "foreground": "#b45309"
-      }
-    }
   ]
 }
