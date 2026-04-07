@@ -3,7 +3,7 @@
     "displayName": "YaMa Theme",
     "publisher": "yama",
     "description": "Theme for Vue",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "engines": {
         "vscode": "^1.105.1"
     },

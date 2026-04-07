@@ -288,6 +288,7 @@
     {
       "name": "Variable",
       "scope": [
+        "variable.language.this",
         "variable.other.constant",
         "variable.other.global",
         "variable.other.readwrite.global",
@@ -381,7 +382,6 @@
     {
       "name": "Number, Constant",
       "scope": [
-        "variable.language.this",
         "variable.other.constant.object",
         "constant.numeric",
         "constant.language",
